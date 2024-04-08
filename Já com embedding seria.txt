@@ -1,0 +1,26 @@
+ Já com embedding, seria possível identificar palavras com contextos semânticos similares através de vetores de palavras, ampliando sua base de dados com novas palavras que compartilham contextos ou significados semelhantes. 
+ 
+ Usando embeddings, você pode analisar vetores de palavras para identificar aquelas que estão próximas no espaço vetorial, o que indica similaridade semântica. Ferramentas como o GPT-4 podem ser usadas para gerar embeddings de palavras ou frases. Com esses vetores, você pode buscar palavras "vizinhas" (mais próximas no espaço vetorial) às suas palavras priming, identificando novas palavras com contextos ou significados semelhantes. Isso pode ser feito através de bibliotecas de processamento de linguagem natural que suportem operações em espaço vetorial, como o spaCy ou o Gensim.
+Primeiro, usar a spaCy para analisar sua base de dados atual e extrair características linguísticas e semânticas importantes das palavras priming existentes. Em seguida, você poderia usar essas características para consultar a API de Embedding da OpenAI, buscando palavras ou frases com embeddings similares, o que indicaria uma proximidade semântica. Este processo poderia ajudá-lo a expandir sua base de dados de priming semântico com novos pares relevantes.
+
+RoPE (Rotary Positional Embedding): Uma técnica que codifica a posição dos tokens de uma maneira que preserva a informação relativa de distância entre eles, melhorando a capacidade do modelo de entender o contexto baseado na posição.
+Ativação GLU (Gated Linear Units): Uma função de ativação que combina propriedades lineares e não-lineares para melhorar a capacidade do modelo de capturar complexidades nos dados.
+GQA (Generalized Query Attention): Uma modificação na maneira como o modelo presta atenção às diferentes partes do texto, permitindo um foco mais preciso e adaptativo nas informações relevantes.
+
+pipelines RAG
+
+Sequoia 
+
+O DenseFormer
+
+Bibliography 
+[1] “Introducing DBRX: A New State-of-the-Art Open LLM.” Databricks Mosaic AI Research, 27 March 2024. 
+[2] Lambert, Nathan, et al. "RewardBench: Evaluating Reward Models for Language Modeling." arXiv preprint arXiv:2403.13787 (2024). 
+[3] Gadre, Samir Yitzhak, et al. "Language models scale reliably with over-training and on downstream tasks." arXiv preprint arXiv:2403.08540 (2024). 
+[4] Zhang, Tianjun, et al. "RAFT: Adapting Language Model to Domain Specific RAG.” arXiv preprint arXiv:2403.10131 (2024). 
+[5] Ibrahim, Adam, et al. "Simple and Scalable Strategies to Continually Pre-train Large Language Models." arXiv preprint arXiv:2403.08763 (2024). 
+[6] Chen, Zhuoming, et al. "Sequoia: Scalable, Robust, and Hardware-aware Speculative Decoding." arXiv preprint arXiv:2402.12374 (2024). 
+[7] Pagliardini, Matteo, et al. "DenseFormer: Enhancing Information Flow in Transformers via Depth Weighted Averaging." arXiv preprint arXiv:2402.02622 (2024). 
+[8] Carlini, Nicholas, et al. "Stealing Part of a Production Language Model." arXiv preprint arXiv:2403.06634 (2024). 
+[9] Zhao, Bowen, et al. "Set the Clock: Temporal Alignment of Pretrained Language Models." arXiv preprint arXiv:2402.16797 (2024). 
+[10] Eetemadi, Sauleh, et al. "Survey of data-selection methods in statistical machine translation." Machine Translation 29 (2015): 189-223.
